@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>설문조사과제</title>
+</head>
+<body>
+    <header>
+        <fieldset>
+            <legend>개인정보</legend>
+            <!-- Q gender -->
+            <p>성별이 어떻게 되십니까?</p>
+            <input type="radio" id="man" name="gender">
+            <label for="man">남자</label>
+            <input type="radio" id="woman" name="gender">
+            <label for="woman">여자</label>
+            <input type="radio" id="other" name="gender">
+            <label for="other">기타</label>
+            <!-- Q live -->
+            <p>거주지가 어디십니까?</p>
+            <select>
+                <option value="seoul">서울</option>
+                <option value="incheon">인천</option>
+                <option value="gangwon">강원</option>
+                <option value="chungcheong">충청</option>
+                <option value="gyeongsang">경상</option>
+                <option value="jeolla">전라</option>
+                <option value="jeju">제주</option>
+                <option value="other">그외</option>
+            </select>
+        </fieldset>
+    </header>
+    <!-- header end -->
+    <!-- main start -->
+    <main>
+        <form>
+            <!-- survey -->
+            <fieldset>
+                <legend>설문</legend>
+                <!-- how many -->
+                <p>일주일에 며칠 운동하십니까?</p>
+                <input type="radio" id="seven" name="time">
+                <label for="seven">7일</label>
+                <input type="radio" id="five" name="time">
+                <label for="five">5-6일</label>
+                <input type="radio" id="three" name="time">
+                <label for="three">3-4일</label>
+                <input type="radio" id="one" name="time">
+                <label for="one">1-2일</label>
+                <input type="radio" id="nothing" name="time">
+                <label for="nothing">안함</label>
+                <!-- kind of -->
+                <p>어떤 운동을 즐겨하시나요? 좋아하는 운동은 모두 선택해주세요.</p>
+                <input type="checkbox" id="gym" name="kind">
+                <label for="gym">헬스</label>
+                <input type="checkbox" id="climb" name="kind">
+                <label for="climb">등산</label>
+                <input type="checkbox" id="run" name="kind">
+                <label for="run">달리기</label>
+                <input type="checkbox" id="Breath" name="kind">
+                <label for="Breath">숨쉬기</label>
+                <input type="checkbox" id="swim" name="kind">
+                <label for="swim">수영</label>
+                <input type="checkbox" id="yoga" name="kind">
+                <label for="yoga">요가</label>
+                <input type="checkbox" id="ect" name="kind">
+                <label for="ect">기타
+                    <input type="text" id="ectinput" name="kind" placeholder="입력해주세요">
+                </label>
+            </fieldset>
+            <!-- comment -->
+            <fieldset>
+                <legend>기타의견</legend>
+                <textarea cols="40" rows="10" name="comment" placeholder="자유롭게 입력해주세요"></textarea>
+            </fieldset>
+            <br>
+            <input type="submit">
+        </form>
+    </main >
+    <!-- main end -->
+    <br>
+    <hr>
+    <!-- footer start -->
+    <footer>
+        <p>참여해주셔서 감사합니다.</p>
+    </footer>
+</body>
+</html>
