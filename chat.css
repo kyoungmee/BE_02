@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    background-color: rgba(103, 229, 57, 0.357);
+}
+
+/* profile area*/
+
+.chat_main {
+    padding: 24px;
+    height: 120px;
+    background-color: #fff;
+    display: flex;
+}
+
+.pro_pic {
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    background-color: rgba(103, 229, 57, 0.357);
+}
+
+.pro_info {
+    padding: 16px;
+}
+
+.pro_num {
+    padding: 8px;
+    color: gray;
+    font-size: 14px;
+}
+
+/*text area*/
+
+.chat_form {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    height: 120px;
+    width: 100%;
+    border-color: #fff;
+}
+
+.chat_text {
+    height: 120px;
+    width: calc(100% - 120px);
+    border: none;
+    resize: none;
+    font-size: 20px;
+    padding: 16px;
+}
+
+.chat_text:focus {
+    outline: none;
+}
+
+.chat_bt {
+    width: 120px;
+    height: 120px;
+    background-color: rgba(103, 229, 57, 0.357);
+    font-size: 32px;
+    color: gray;
+    border: 1px solid rgba(103, 229, 57, 0.422);
+    border-radius: 10px;
+}
+
+.chat_bt:active {
+    background-color: rgba(103, 229, 57, 0.884);
+    color: darkgray;
+}
