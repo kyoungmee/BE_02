@@ -1,0 +1,62 @@
+* {
+    font-family: 'Gaegu', sans-serif;
+    margin: 0;
+    padding: 0;
+} 
+
+body {
+    background-color: rgba(255, 180, 125, 0.309);
+}
+
+body > #main {
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+}
+
+p {
+    margin: 5px;
+    color: green;
+}
+
+/*fun sidebar*/
+
+#sidebar {
+    background-color: rgb(255, 191, 0);
+    margin: 20px 0 20px 20px;
+    padding: 20px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 20px 0 0 20px;
+    width: 10%;
+}
+
+#smile {
+    font-size: 40px;
+    padding: 0;
+    margin: 0;
+}
+
+#fun {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+/*content*/
+
+#content {
+    background-color: #fff ;
+    margin: 20px 20px 20px 0;
+    padding: 30px;
+    border-radius: 0 20px 20px 0;
+    width: 80%;
+}
+
+#joy {
+    font-size: 32px;
+    font-weight: 800;
+}
+
+#welcome {
+    padding: 16px;
+}
