@@ -1,0 +1,58 @@
+*{
+    font-family: 'Nanum Brush Script', cursive;
+    text-align: center;
+}
+
+body {
+    background-color: rgba(157, 227, 123, 0.428);
+}
+
+hr {
+    width: 70%;
+    color: rgba(249, 133, 249, 0.306);
+    border: 1px solid;
+}
+
+#intro {
+    color: rgba(255, 0, 0, 0.605);
+    font-size: 2.5rem;
+}
+
+#comment {
+    color: rgba(245, 157, 76, 0.904);
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+div {
+    padding-top: 16px;
+    font-size: 24px;
+}
+
+div .var { 
+    color: palevioletred;
+    font-size: 28px;
+
+}
+
+div .call {
+    color: rgba(74, 56, 241, 0.742);
+    font-size: 32px;
+    font-weight: 700;
+}
+
+footer {
+    font-size: 18px;
+}
+
+footer .find {
+    font-size: 36px;
+    margin: 5px;
+    color: rgba(172, 44, 242, 0.496);
+}
+
+footer a {
+    font-size: 40px;
+    text-decoration: none;
+    color: rgba(233, 44, 44, 0.767);
+}

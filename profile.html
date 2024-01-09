@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap" rel="stylesheet">
+    <link href="./profile.css" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1><mark>우주최강 귀염둥이들을 소개합니다</mark></h1>
-        <h5>지구<em>뿌셔뿌셔</em></h5>
+        <h1><mark>우주최강 <span id="intro">귀염둥이들</span>을 소개합니다</mark></h1>
+        <h5 id="comment">지구<em>뿌셔뿌셔</em></h5>
     </header>
     <hr>
     <!-- main start-->
@@ -17,7 +21,7 @@
         <div>
             <img src="./후추.jpeg" width="200" alt="닥스훈트후추coming" title="그가온다">
             <img src="./후추2.jpeg" width="200" alt="닥스훈트후추2" title="까꿍">
-            <p>안녕하세요! 닥스훈트 다리짧 몸은 긴 사랑둥이 후추랍니다 ;) 
+            <p>안녕하세요! <span class="var">닥스훈트</span> 다리짧 몸은 긴 사랑둥이 <span class="call">후추</span>랍니다 ;) 
                 <br> 처음에 낯을 좀 가리지만 냄새킁킁 하면 금방 잘 뛰어다녀요!
             </p>
         </div> 
@@ -26,7 +30,7 @@
         <div>
             <img src="./프불.jpeg" width="200" alt="프랜치불독정면" title="짜잔">
             <img src="./프불2.jpeg" width="200" alt="프랜치불독옆모습" title="헷">
-            <p>안녕하세요! 성격좋고 착한 귀염둥이 프랜치 불독 밀키에요;) 
+            <p>안녕하세요! 성격좋고 착한 귀염둥이 <span class="var">프랜치 불독</span><span class="call"> &nbsp;밀키</span>에요;) 
                 <br> 접종완! 중성화완! 기본훈련 완! 모든것이 완벽한데 적응력까지 갓벽하네요!
             </p>
         </div>
@@ -34,11 +38,10 @@
     <!-- footer start -->
     <hr>
     <footer>
-        <p>모든것이 완벽한데 아직 가족을 찾지못했어요 :(</p>
-        <h4><strong>가족</strong>을 찾습니다<br>
-        소중한 가족이 되어주세요 :)</h4>
+        <p>모든것이 완벽한데 아직 가족을 찾지못했어요</p>
+        <p class="find">소중한 가족이 되어주세요!</p>
         <a href="https://www.zooseyo.com/main/main.php?" target="_blank">
-            <h2>사지말고 <mark>입양</mark>하세요</h2>
+            <h2>사지말고 <mark>"입양"</mark>하세요</h2>
         </a>
     </footer>
 </body>
