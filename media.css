@@ -1,0 +1,65 @@
+
+body {
+    background-color: rgba(144, 245, 211, 0.509);
+}
+
+div {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    font-weight: 700;
+    color:white;
+}
+p{
+    font-size: 28px;
+    font-weight: 400;
+}
+
+@media screen and (max-width:1280px) {
+    body{
+        background-color: rgb(247, 100, 100) ;
+    }
+    .comment::after {
+        content:"일반PC";
+    }
+}
+
+@media screen and (max-width:1000px) {
+    body{
+        background-color: rgb(40, 221, 249) ;
+    }
+    .comment::after {
+        content:"노트북";
+    }
+}
+
+@media screen and (max-width:800px) {
+    body{
+        background-color: rgb(203, 40, 249) ;
+    }
+    .comment::after {
+        content:"아이패드PRO";
+    }
+}
+
+@media screen and (max-width:400px) {
+    body{
+        background-color: green ;
+    }
+    .comment::after {
+        content:"태블릿세로";
+    }
+}
+
+
+@media screen and (max-width:200px) {
+    body{
+        background-color: palevioletred ;
+    }
+    .comment::after {
+        content:"END";
+    }
+}
