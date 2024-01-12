@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="name"></h1>
+    <p class="animal"></p>
+    <p class="fruit"></p>
+
+    <script>
+        document.querySelector("#name").textContent = prompt("당신의 이름은?")
+        document.querySelector(".animal").textContent = `당신이 좋아하는 동물은 ${prompt("좋아하는 동물은?")}군요!`
+        document.querySelector(".fruit").textContent = `과일은 ${prompt("좋아하는 과일은?")} 좋아하시네요!`
+    </script>
+</body>
+</html>
