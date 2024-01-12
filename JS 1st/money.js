@@ -17,6 +17,7 @@
 function question(n, w) {
     // 여기에서 코드 작성해주세요!
     let result;
+    result = w - (3000*n)
     return result;
     
 }
