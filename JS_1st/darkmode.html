@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body id="darkMode">
+    <button id="white"> white </button>
+    <button id="dark"> black </button>
+
+    <script>
+    const darkMode = document.getElementById("darkMode")
+    const whiteBtn = document.getElementById("white")
+    const darkBtn = document.getElementById("dark")
+    
+
+    console.log(darkMode,darkBtn,whiteBtn)
+
+    function backBlack(){
+        darkMode.style.backgroundColor = "black"
+    };
+    darkBtn.onclick = backBlack
+
+    function backWhite(){
+        darkMode.style.backgroundColor = "white"
+    };
+    whiteBtn.onclick = backWhite
+
+    </script>
+</body>
+</html>

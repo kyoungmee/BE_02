@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+#carouselWapper {
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+}
+
+#carousel {
+    display: flex;
+    transform: translate3d(0,0,0);
+    transition: transform 0.2s;
+
+}
+
+#carousel >img {
+    width:400px;
+    height: 300px;
+}
+
+button { 
+    margin: 8px 4px 8px;
+}
