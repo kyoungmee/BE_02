@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>별</title>
+</head>
+<body>
+    <div id="container">
+        <h1>1번별</h1>
+            <div id="star1"></div>
+        <h1>2번별</h1>
+            <div id="star2"></div>
+        <h1>3번별</h1>
+            <div id="star3"></div>
+    </div>
+    <script>
+        const container = document.getElementById("container")
+        const star1 = document.getElementById("star1")
+        const star2 = document.getElementById("star2")
+        const star3 = document.getElementById("star3")
+
+        for(let i=0; i<=5; i++){
+            for(let j=0; j<=i; j++){
+                document.write("*")
+            }
+            document.write('<br>')
+        }
+        
+
+        container.append(star1)
+
+    </script>
+</body>
+</html>

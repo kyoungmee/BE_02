@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기말고사</title>
+</head>
+<body>
+    <h1>다음 조건에 맞는 코드를 작성</h1>
+    <p>
+        조건 : <br>
+        1. 입력창을 띄워 사용자의 0~100 숫자를 받는다<br>
+        2. 입력받은 점수에 맞는 성적 등급을 나눈다. 
+    </p>
+    <div id="container"></div>
+
+    <script>
+        const container = document.getElementById("container")
+        console.log(container)
+
+        let score= parseInt(prompt("중간고사 점수를 입력하세요."))
+
+        credit = "";
+        if (score >= 90) {
+            credit = "A"
+        }else if (score >= 80){
+            credit = "B"
+        }else if (score >= 70){
+            credit = "C"
+        }else if (score >= 60){
+            credit = "D"
+        }else{
+            credit = "F2"
+        }
+
+        const div = document.createElement("div")
+        div.textContent = `3. 나의 기말고사 점수는 ${score}점, 학점은 ${credit}!!`
+        container.appendChild(div)
+
+    </script>
+</body>
+</html>
