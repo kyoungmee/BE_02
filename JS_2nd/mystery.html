@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mystery Num</title>
+</head>
+<body>
+    <h1>미스테리 숫자 맞추기</h1>
+    <br>
+    <h3>1부터 100사이의 숫자를 입력하세요</h3>
+    <input id="mystery" type="number"/>
+    <button class="button">뚜둥!</button>
+    <div class="hint"></div>
+
+    <script>
+        const input = document.getElementById("mystery")
+        const btn = document.querySelector(".button")
+        const hint = document.querySelector(".hint")
+
+        let mysteryNum = Math.floor(Math.random()*100+1)
+        console.log(mysteryNum)
+        btn.addEventListener("click",()=>{
+            let inputValue = input.value
+            hint.textContent = ""
+
+            if (mysteryNum == inputValue){
+                hint.textContent = "정답입니다"
+                alert ("천재인가봐요 정답!!")
+            }else if (mysteryNum < inputValue){
+                hint.textContent = "더 작은 숫자를 입력하세요"
+            }else {
+                hint.textContent = "더 큰수를 입력하세요"
+            }
+        })
+    </script>
+</body>
+</html>
